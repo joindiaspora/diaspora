@@ -4,10 +4,12 @@
 
 module MotdHelper
   def donationWidth()
-    res = Net::HTTP.get_response("zauberstuhl.de","/donate/json")
-    if res.kind_of? Net::HTTPSuccess
-      (JSON.parse(res.body))['width']
-    else; 0; end
+    uri = URI.parse("https://zauberstuhl.de/donate/json")
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    res = http.get(uri.request_uri)
+
+    (JSON.parse(res.body))['width']
   rescue
     0
   end
