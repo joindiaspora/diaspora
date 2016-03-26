@@ -3,7 +3,12 @@
 #   the COPYRIGHT file.
 
 module MotdHelper
-  def print_motd()
-    raw File.open("/etc/motd", "r").read
+  def donationWidth()
+    res = Net::HTTP.get_response("zauberstuhl.de","/donate/json")
+    if res.kind_of? Net::HTTPSuccess
+      (JSON.parse(res.body))['width']
+    else; 0; end
+  rescue
+    0
   end
 end
