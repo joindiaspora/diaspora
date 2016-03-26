@@ -42,6 +42,8 @@
         %li{data: {stream: "public"}}
           = link_to t("streams.public.title"), public_stream_path, rel: "backbone", class: "hoverable"
 
+      = render "shared/motd"
+
     .span6
       #aspect_stream_container.stream_container
         = render 'aspects/aspect_stream', :stream => @stream

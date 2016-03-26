@@ -3,9 +3,8 @@
 -#   the COPYRIGHT file.
 
 - if user_signed_in? && @person != current_user.person
-  -#%h3#aspect_stream_header.stream_title
-  -#  = stream.title
-  = render 'publisher/motd'
+  %h3#aspect_stream_header.stream_title
+    = stream.title
 
 = render 'publisher/publisher', publisher_aspects_for(stream)
 = render 'aspects/no_posts_message'
