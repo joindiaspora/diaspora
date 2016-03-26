@@ -12,6 +12,10 @@
 {{/if}}
 
 <div id="author_info">
+  {{#if profile_role_exists}}
+    <h3><span class="label label-{{profile_role_label}}" style="display:block">{{profile_role_name}}</span></h3>
+  {{/if}}
+
   <h2>
     <span id="name">{{name}}</span>
     <span id="diaspora_handle">{{diaspora_id}}</span>
