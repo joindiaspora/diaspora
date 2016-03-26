@@ -5,6 +5,7 @@
 
 # TODO is not present on docker start
 export PORT=3000;
+export RAILS_ENV=production;
 
 warning()
 {
