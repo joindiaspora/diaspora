@@ -1,0 +1,142 @@
+<%= content_for :head do %>
+  <meta property="og:title" content="Diaspora*"/>
+  <meta property="og:description" content="The community-run, distributed social network"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://joindiaspora.com"/>
+  <meta property="og:image" content="https://joindiaspora.com/icon_128.gif"/>
+  <meta property="fb:app_id" content="120373411325347"/>
+
+  <style>
+    .steps > .content > div { text-align: center; }
+    /* le declarations */
+    /* line 2, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing {
+      overflow: hidden;
+      position: absolute;
+      min-height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+    }
+    /* line 48, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #invites {
+      margin: 20px 0;
+    }
+    /* line 62, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner {
+      text-align: center;
+      padding: 50px;
+      margin-bottom: 50px;
+      color: #ccc;
+      background: #222;
+    }
+    /* line 63, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .container {
+      position: relative;
+    }
+    /* line 73, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner h2 {
+      font-weight: 100;
+    }
+    /* line 77, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .landing-logo {
+      margin-bottom: 15px;
+      height: 60px;
+    }
+    /* line 82, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .landing-banner-right {
+      position: absolute;
+      right: 0;
+    }
+    /* line 86, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .landing-banner-right a {
+      color: #ccc;
+      font-size: 1.2em;
+      font-weight: 100;
+      padding: 5px 10px;
+    }
+    /* line 94, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .login-button {
+      -moz-border-radius: 3px 3px 3px 3px;
+      -webkit-border-radius: 3px 3px 3px 3px;
+      border-radius: 3px 3px 3px 3px;
+      border: 1px solid #666666;
+      background: #111;
+    }
+    /* line 99, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #landing_banner .login-button:hover {
+      background: #222;
+      border: 1px solid #999999;
+      text-decoration: none;
+    }
+    /* line 107, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #steps {
+      text-align: center;
+    }
+    /* line 109, ../../app/assets/stylesheets/new_styles/_landing.scss */
+    #landing #steps p {
+      color: #666;
+    }
+
+    .row_centered {
+      margin: auto;
+      width: 700px;
+      text-align: center;
+    }
+
+    header{
+      display:none;
+    }
+
+  </style>
+<% end %>
+
+<div id="landing">
+  <div id="landing_banner">
+    <div class="container">
+      <span class="landing-banner-right">
+        <%= link_to 'Blog', 'http://blog.diasporafoundation.org' %>
+        <%= link_to 'Login', '/users/sign_in', :class => 'login-button' %>
+      </span>
+
+      <h1>D I A S P O R A *</h1>
+      <h2>The community-run, distributed social network</h2>
+      <h4>JoinDiaspora.com is one of <%= link_to 'many installations', 'http://podupti.me' %> of 
+        <%= link_to 'diaspora*', 'http://github.com/diaspora/diaspora' %></h4>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="content">
+
+      <div class="row-fluid">
+        <div class="span10 offset1 row_centered">
+          <h1>Diaspora* goes Non-Profit</h1>
+          <h3>Help support our mission of decentralizing the social web!</h3>
+          <h2><%=  link_to 'Learn more', 'https://blog.diasporafoundation.org/1-diaspora-celebrates-one-year-as-a-community-project' %></h2>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span10 offset1 row_centered">
+          <div class="alert alert-warning">
+            <h4>JoinDiaspora.com registrations are closed</h4>
+              But don't worry! Diaspora* is completely decentralized, and any person from any pod can communicate with one 
+              another! You can register at any of these <%= link_to 'other pods', 'http://podupti.me' %>. You can also 
+              choose to <%= link_to 'set up your own pod', 'https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers' %> 
+              if you'd like. 
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span10 offset1 row_centered">
+          <h3>What is Diaspora*!?</h3>
+          <pre style="white-space:pre-wrap">Diaspora (currently styled diaspora* and formerly styled DIASPORA*) is a free personal web server that implements a distributed social networking service. Installations of the software form nodes (termed "pods") which make up the distributed Diaspora social network. The project was founded by Dan Grippi, Maxwell Salzberg, Raphael Sofaer and Ilya Zhitomirskiy, students at New York University's Courant Institute of Mathematical Sciences. The group received crowdfunding in excess of $200,000 via Kickstarter. A consumer alpha version was released on November 23, 2010.</pre>
+          <a href="http://en.wikipedia.org/wiki/Diaspora_%28software%29">Learn More about Diaspora*</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
