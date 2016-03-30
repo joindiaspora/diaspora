@@ -1,0 +1,61 @@
+- content_for(:head) do
+  = stylesheet_link_tag :home, media: "all"
+
+#landing
+  #landing_banner
+    .container
+      %span.landing-banner-right
+        = link_to 'Blog', 'http://blog.diasporafoundation.org'
+        = link_to 'Login', '/users/sign_in', :class => 'login-button'
+
+      %h1
+        D I A S P O R A *
+      %h2
+        The community-run, distributed social network
+
+      %h4
+        :plain
+          JoinDiaspora.com is one of <a href="http://podupti.me">many installations</a> of
+          <a href="http://github.com/diaspora/diaspora">diaspora*</a>
+
+  #page.container
+    #steps.row
+      .span4
+        %h2
+          Diaspora* goes Non-Profit
+
+        %p
+          Help support our mission of decentralizing the social web!
+        = link_to 'Learn more', 'https://blog.diasporafoundation.org/1-diaspora-celebrates-one-year-as-a-community-project'
+
+      .span4
+        %h2 JoinDiaspora registrations are closed
+
+        :plain
+          <p>But don't worry! Diaspora* is completely decentralized, and any person from any pod can communicate with one
+          another! You can register at any of these <a href="http://podupti.me">other pods</a>. You can also choose to
+          <a href="https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers">set up your own pod</a> if you'd like.</p>
+
+      .span4
+        %h2 Make a contribution!
+
+        %p
+          Make Diaspora even better! Fork the project on
+          = link_to "Github", "http://github.com/diaspora/diaspora"
+          make some changes, and submit a pull request.
+
+    %footer{style: "border-bottom:0;"}
+      %h3 Useful Resources
+      %ul#links
+        %ul.section
+          %li= link_to "Codebase", "http://github.com/diaspora/diaspora", title: "Git repository"
+          %li= link_to "Documentation", "http://wiki.diasporafoundation.org", title: "Project wiki"
+        %ul.section
+          %li= link_to "IRC - General", "http://webchat.freenode.net/?channels=diaspora", title: "#diaspora"
+          %li= link_to "IRC - Development", "http://webchat.freenode.net/?channels=diaspora-dev", title: "#diaspora-dev"
+        %ul.section
+          %li= link_to "Discussion - General", "http://groups.google.com/group/diaspora-discuss", title: "General discussion mailing list"
+          %li= link_to "Discussion - Development", "http://groups.google.com/group/diaspora-dev", title: "Dev mailing list"
+        %ul.section
+          %li= link_to "Find & Report bugs", "https://github.com/diaspora/diaspora/issues", title: "Bug tracker"
+          %li= link_to "Learn more about Ruby On Rails!", "http://guides.rubyonrails.org/"

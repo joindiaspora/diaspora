@@ -82,3 +82,78 @@ footer {
 .row {
   margin-bottom: 60px;
 }
+
+/* line 2, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing {
+  overflow: hidden;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/* line 48, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #invites {
+  margin: 20px 0;
+}
+
+/* line 62, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 50px;
+  color: #ccc;
+  background: #222;
+}
+
+/* line 63, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .container {
+  position: relative;
+}
+
+/* line 73, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner h2 {
+  font-weight: 100;
+}
+
+/* line 77, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .landing-logo {
+  margin-bottom: 15px;
+  height: 60px;
+}
+
+/* line 82, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .landing-banner-right {
+  position: absolute;
+  right: 0;
+}
+
+/* line 86, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .landing-banner-right a {
+  color: #ccc;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 5px 10px;
+}
+
+/* line 94, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .login-button {
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #666666;
+  background: #111;
+}
+
+/* line 99, ../../app/assets/stylesheets/new_styles/_landing.scss */
+#landing #landing_banner .login-button:hover {
+  background: #222;
+  border: 1px solid #999999;
+  text-decoration: none;
+}
+
+header{
+  display:none;
+}
