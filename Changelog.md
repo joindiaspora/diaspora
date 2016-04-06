@@ -1,13 +1,23 @@
+# 0.5.9.0
+
+## Refactor
+
+## Bug fixes
+
+## Features
+
 # 0.5.8.0
 
 ## Refactor
 * Sort tag autocompletion by tag name [#6734](https://github.com/diaspora/diaspora/pull/6734)
+* Make account deletions faster by adding an index [#6771](https://github.com/diaspora/diaspora/pull/6771)
 
 ## Bug fixes
 * Fix empty name field when editing aspect names [#6706](https://github.com/diaspora/diaspora/pull/6706)
 * Fix internal server error when trying to log out of an expired session [#6707](https://github.com/diaspora/diaspora/pull/6707)
 * Only mark unread notifications as read [#6711](https://github.com/diaspora/diaspora/pull/6711)
 * Use https for OEmbeds [#6748](https://github.com/diaspora/diaspora/pull/6748)
+* Fix birthday issues on leap days [#6738](https://github.com/diaspora/diaspora/pull/6738)
 
 ## Features
 * Added the footer to conversation pages [#6710](https://github.com/diaspora/diaspora/pull/6710)
