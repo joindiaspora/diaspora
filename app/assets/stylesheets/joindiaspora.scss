@@ -1,7 +1,22 @@
 // NOTE remove for B3
-.progress-bar-danger {
+$color_chestnut_approx: #b94a48;
+$white: #fff;
+$color_boston_blue_approx: #3a87ad;
+
+.label {
   text-align: center;
-  text-shadow: 0 0 0 #fff;
-  background-color: #b94a48;
-  color: #fff;
+}
+.label-danger {
+  background-color: $color_chestnut_approx;
+}
+.progress-bar {
+  text-align: center;
+  text-shadow: 0 0 0 $white;
+  color: $white;
+}
+.progress-bar-danger {
+  background-color: $color_chestnut_approx;
+}
+.progress-bar-info {
+  background-color: $color_boston_blue_approx;
 }
