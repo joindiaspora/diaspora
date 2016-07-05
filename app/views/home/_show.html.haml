@@ -21,15 +21,7 @@
 
   #page.container
     #steps.row
-      .span4
-        %h2
-          Diaspora* goes Non-Profit
-
-        %p
-          Help support our mission of decentralizing the social web!
-        = link_to 'Learn more', 'https://blog.diasporafoundation.org/1-diaspora-celebrates-one-year-as-a-community-project'
-
-      .span4
+      .span6
         %h2 Decentralization
 
         :plain
@@ -37,13 +29,32 @@
           another! You can register at any of these <a href="http://podupti.me">other pods</a> as well. You can also choose to
           <a href="https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers">set up your own pod</a> if you'd like.</p>
 
-      .span4
+      .span6
+        %h1 Tor .onion Service
+
+        %p
+          Tor makes it possible for users to hide their locations
+          while offering various kinds of services,
+          such as web publishing or an instant messaging server: 
+        %code
+          diasporaaqmjixh5.onion
+
+    #steps.row
+      .span6
         %h2 Make a contribution!
 
         %p
           Make Diaspora even better! Fork the project on
           = link_to "Github", "http://github.com/diaspora/diaspora"
           make some changes, and submit a pull request.
+
+      .span6
+        %h2
+          Diaspora* goes Non-Profit
+
+        %p
+          Help support our mission of decentralizing the social web!
+        = link_to 'Learn more', 'https://blog.diasporafoundation.org/1-diaspora-celebrates-one-year-as-a-community-project'
 
     %footer{style: "border-bottom:0;"}
       %h3 Useful Resources
