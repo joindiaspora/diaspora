@@ -1,3 +1,24 @@
+# 0.6.3.0
+
+## Refactor
+* Increase the spacing above and below post contents [#7267](https://github.com/diaspora/diaspora/pull/7267)
+* Replace fileuploader-custom with FineUploader [#7083](https://github.com/diaspora/diaspora/pull/7083)
+* Always show mobile reaction counts [#7207](https://github.com/diaspora/diaspora/pull/7207)
+* Refactor mobile alerts for error responses [#7227](https://github.com/diaspora/diaspora/pull/7227)
+* Switch content and given reason in the reports overview [#7180](https://github.com/diaspora/diaspora/pull/7180)
+
+## Bug fixes
+* Fix background color of year on notifications page with dark theme [#7263](https://github.com/diaspora/diaspora/pull/7263)
+* Fix jasmine tests in firefox [#7246](https://github.com/diaspora/diaspora/pull/7246)
+* Prevent scroll to top when clicking 'mark all as read' in the notification dropdown [#7253](https://github.com/diaspora/diaspora/pull/7253)
+* Update existing notifications in dropdown on fetch [#7270](https://github.com/diaspora/diaspora/pull/7270)
+* Fix link to post on mobile photo page [#7274](https://github.com/diaspora/diaspora/pull/7274)
+* Fix some background issues on dark mobile themes [#7278](https://github.com/diaspora/diaspora/pull/7278)
+
+## Features
+* Add links to the aspects and followed tags pages on mobile [#7265](https://github.com/diaspora/diaspora/pull/7265)
+* diaspora\* is now available in Gàidhlig, Occitan, and Schwiizerdütsch
+
 # 0.6.2.0
 
 ## Refactor

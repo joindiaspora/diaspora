@@ -246,11 +246,6 @@ en:
       comment: "Comment"
       commenting: "Commenting..."
 
-  reactions:
-    zero: "No reactions"
-    one: "1 reaction"
-    other: "%{count} reactions"
-
   contacts:
     index:
       start_a_conversation: "Start a conversation"
@@ -596,6 +591,8 @@ en:
   likes:
     create:
       error: "Failed to like."
+    destroy:
+      error: "Failed to unlike."
 
   notifications:
     started_sharing:
@@ -938,10 +935,10 @@ en:
 
   report:
     title: "Reports overview"
-    post_label: "<b>Post</b>: %{title}"
-    comment_label: "<b>Comment</b>:<br>%{data}"
+    post_label: "<b>Post</b>: %{content}"
+    comment_label: "<b>Comment</b>: %{data}"
     reported_label: "<b>Reported by</b> %{person}"
-    reason_label: "Reason: %{text}"
+    reason_label: "Reason:"
     review_link: "Mark as reviewed"
     delete_link: "Delete item"
     reported_user_details: "Details on reported user"
@@ -1135,6 +1132,7 @@ en:
       title: "#Followed tags"
       add_a_tag: "Add a tag"
       follow: "Follow"
+      all: "All tags"
 
     tags:
       title: "Posts tagged: %{tags}"
@@ -1147,6 +1145,7 @@ en:
 
     aspects:
       title: "My aspects"
+      all: "All aspects"
 
     activity:
       title: "My activity"

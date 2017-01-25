@@ -13,7 +13,7 @@ gem "unicorn-worker-killer", "0.4.4"
 
 # Federation
 
-gem "diaspora_federation-rails", "0.1.5"
+gem "diaspora_federation-rails", "0.1.7"
 
 # API and JSON
 
@@ -85,7 +85,6 @@ gem "entypo-rails", "3.0.0.pre.rc2"
 
 # JavaScript
 
-gem "backbone-on-rails", "1.2.0.0"
 gem "handlebars_assets", "0.23.1"
 gem "jquery-rails",      "4.2.1"
 gem "jquery-ui-rails",   "5.0.5"
@@ -95,23 +94,26 @@ gem "js-routes",         "1.2.9"
 source "https://rails-assets.org" do
   gem "rails-assets-jquery",                              "2.2.4" # Should be kept in sync with jquery-rails
 
-  gem "rails-assets-markdown-it",                         "8.0.0"
+  gem "rails-assets-markdown-it",                         "8.2.2"
   gem "rails-assets-markdown-it-hashtag",                 "0.4.0"
-  gem "rails-assets-markdown-it-diaspora-mention",        "1.0.0"
+  gem "rails-assets-markdown-it-diaspora-mention",        "1.1.0"
   gem "rails-assets-markdown-it-sanitizer",               "0.4.3"
   gem "rails-assets-markdown-it--markdown-it-for-inline", "0.1.1"
   gem "rails-assets-markdown-it-sub",                     "1.0.0"
   gem "rails-assets-markdown-it-sup",                     "1.0.0"
   gem "rails-assets-highlightjs",                         "9.7.0"
+
+  gem "rails-assets-backbone",                            "1.3.3"
   gem "rails-assets-bootstrap-markdown",                  "2.10.0"
   gem "rails-assets-corejs-typeahead",                    "1.0.1"
+  gem "rails-assets-fineuploader-dist",                   "5.11.0"
 
   # jQuery plugins
 
   gem "rails-assets-jquery-placeholder",            "2.3.1"
   gem "rails-assets-jquery-textchange",             "0.2.3"
   gem "rails-assets-perfect-scrollbar",             "0.6.12"
-  gem "rails-assets-autosize",                      "3.0.17"
+  gem "rails-assets-autosize",                      "3.0.20"
   gem "rails-assets-blueimp-gallery",               "2.21.3"
 end
 
@@ -289,7 +291,7 @@ group :test do
   gem "webmock",            "2.1.0", require: false
   gem "shoulda-matchers",   "3.1.1"
 
-  gem "diaspora_federation-test", "0.1.5"
+  gem "diaspora_federation-test", "0.1.7"
 
   # Coverage
   gem 'coveralls', require: false
