@@ -20,7 +20,7 @@ function createUploader(){
     },
     validation: {
       allowedExtensions: ["jpg", "jpeg", "png", "gif", "tif", "tiff"],
-      sizeLimit: 4194304
+      sizeLimit: 8388608
     },
     button: document.getElementById("file-upload-publisher"),
 
