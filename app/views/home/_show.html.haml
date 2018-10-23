@@ -1,0 +1,55 @@
+.dandelion-background
+  .jumbotron
+    .container-fluid.home-user
+      .row
+        .col-md-8.text-center
+          %h1= t("home.default.headline", pod_name: pod_name)
+          %h2= t("home.default.byline")
+        .col-md-4.login-form
+          = render partial: "sessions/form", locals: {mobile: false, resource: User.new, resource_name: :user}
+
+.container-fluid
+  .row
+    .col-md-12
+      .landing-info-card.text-center
+        %h3 This is not the diaspora* project website.
+        diaspora* is a decentralized social network, consisting of many individual servers, called "pods". joindiaspora.com is only one server out of many and neither affiliated with nor supported by the project team. Please check out
+        %strong
+          = link_to "the official project website on diasporafoundation.org", "https://diasporafoundation.org"
+        for more information about the project itself, as well as a list of all public diaspora* pods and information on how you can contribute!
+  .row
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Own your own data
+        Many networks use your data to make money by analysing your interactions and using this information to advertise things to you. diaspora* doesn’t use your data for any purpose other than allowing you to connect and share with others.
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Choose your audience
+        diaspora*’s aspects allow you to share with just those people you want to. You can be as public or as private as you like. Share a funny photo with the whole world, or a deep secret just with your closest friends. You’re in control.
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Be who you want to be
+        A lot of networks insist that you use your real identity. Not diaspora*. Here you can choose who you want to be, and share as much or as little about yourself as you want. It really is up to you how you want to interact with other people.
+  .row
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Decentralization
+        Diaspora* is completely decentralized, and any person from any pod can communicate with one
+        another! You can register at any of these
+        = link_to "other pods", "http://podupti.me"
+        as well. You can also choose to
+        = link_to "set up your own pod", "https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers"
+        if you'd like.
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Make a contribution!
+        %p
+          Make Diaspora even better! Fork the project on
+          = link_to "Github", "http://github.com/diaspora/diaspora"
+          make some changes, and submit a pull request.
+    .col-md-4
+      .landing-info-card.text-center
+        %h3 Tor .onion Service
+        Tor makes it possible for users to hide their locations while offering various kinds of services, such as web publishing or an instant messaging server:
+        %code
+          diasporaaqmjixh5.onion

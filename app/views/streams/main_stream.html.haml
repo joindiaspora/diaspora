@@ -45,6 +45,8 @@
             %li{data: {stream: "public"}}
               = link_to t("streams.public.title"), public_stream_path, rel: "backbone", class: "hoverable"
 
+        = render "shared/motd"
+
         .sidebar.info-bar.hidden-xs
           - if AppConfig.settings.invitations.open?
             .section.collapsed

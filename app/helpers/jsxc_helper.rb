@@ -10,6 +10,6 @@ module JsxcHelper
     unless AppConfig.chat.server.bosh.proxy?
       return "#{proto}://#{host}:#{port}#{bind}"
     end
-    AppConfig.url_to bind
+    bind
   end
 end

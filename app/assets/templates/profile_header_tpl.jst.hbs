@@ -1,4 +1,8 @@
 <div id="author_info" class="row">
+  {{#if profile_role_exists}}
+    <h3><span class="label label-{{profile_role_label}}" style="display:block">{{profile_role_name}}</span></h3>
+  {{/if}}
+
   <div class="col-sm-10">
     <h2>
       <span id="name">{{name}}</span>

@@ -31,7 +31,8 @@ module Diaspora
 
     def self.url_eligible?(url)
       return false unless url.start_with?('http', '//')
-      return false if url.start_with?(AppConfig.environment.url.to_s,
+      return false if url.start_with?('https',
+                                      AppConfig.environment.url.to_s,
                                       AppConfig.privacy.camo.root.to_s)
       true
     end
