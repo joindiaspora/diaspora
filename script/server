@@ -3,10 +3,6 @@
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
-# TODO is not present on docker start
-export PORT=3000;
-export RAILS_ENV=production;
-
 warning()
 {
   echo "WARNING: $1" >&2
