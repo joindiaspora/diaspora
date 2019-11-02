@@ -1,15 +1,25 @@
-.alert{class: "alert-danger",:role => "alert",:style => "margin-top: 15px;"}
-  %b Welcome to the Diaspora* Network! If you like it support us
-  = succeed "." do
-    %a.alert-link{:href => "https://donorbox.org/matt", :target => "_blank"} with a small donation
-  %script{:src => "https://donorbox.org/widget.js", :type => "text/javascript"}
-  %iframe{:frameborder => "0",
-    :height => "100px", :name => "donorbox",
-    :scrolling => "no", :seamless => "seamless",
-    :src => "https://donorbox.org/embed/matt?only_donation_meter=true&donation_meter_color=%23d9534f",
-    :style => "max-width:500px; max-height:none!important",
-    :width => "100%"}
-  %a.btn.media-object{class: "btn-danger",
-    :href => "https://donorbox.org/matt",
-    :role => "button", :style => "color:#fff",
-    :target => "_blank"} Donate
+.alert.alert-info{:role => "alert",:style => "margin-top: 15px;"}
+  %table
+    %tr
+      %td{:style => "padding-right: 15px;"}
+        %i.glyphicon.glyphicon-home{:style => "font-size: 4em;"}
+      %td
+        %b Moving joindiaspora.com to a public organization
+        %a.alert-link{:href => "https://git.feneas.org/feneas/association/issues/36", :target => "_blank"} Federated Networks Association
+
+.sidebar.info-bar.hidden-xs
+  .section
+    %b Welcome to the Diaspora* Network! If you like it support us
+    = succeed "." do
+      %a.alert-link{:href => "https://donorbox.org/matt", :target => "_blank"} with a small donation
+    %script{:src => "https://donorbox.org/widget.js", :type => "text/javascript"}
+    %iframe{:frameborder => "0",
+      :height => "100px", :name => "donorbox",
+      :scrolling => "no", :seamless => "seamless",
+      :src => "https://donorbox.org/embed/matt?only_donation_meter=true&donation_meter_color=%23d9534f",
+      :style => "max-width:500px; max-height:none!important",
+      :width => "100%"}
+    %a.btn.media-object{class: "btn-primary",
+      :href => "https://donorbox.org/matt",
+      :role => "button", :style => "color:#fff",
+      :target => "_blank"} Donate
